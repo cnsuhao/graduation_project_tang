@@ -1,0 +1,20 @@
+DIR_INC = -I./include
+DIR_SRC = ./src
+CC = gcc
+CFLAGS = -g -Wall $(DIR_INC)
+LLDFLAGS =  -L$(HOME)/Desktop/mysql-connector-c++-1.1.7-linux-ubuntu14.04-x86-64bit/lib -lmysqlcppconn
+
+TARGET = main
+
+all : $(TARGET)
+	
+
+$(TARGET) : main.o DatabaseOpera.o
+	gcc main.o DatabaseOpera.o -o main -lstdc++ $(LLDFLAGS)
+main.o : main.cpp 
+	$(CC) $(CFLAGS) -c main.cpp
+DatabaseOpera.o : $(DIR_SRC)/DatabaseOpera.cpp 
+	$(CC) $(CFLAGS) -c $(DIR_SRC)/DatabaseOpera.cpp
+.PHONY : clean
+clean :
+	-rm DatabaseOpera.o main.o $(TARGET)  
