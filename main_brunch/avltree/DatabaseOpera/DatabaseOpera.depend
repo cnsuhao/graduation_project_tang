@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1459327532 source:/home/tang/DatabaseOpera/main.cpp
+	<iostream>
+	<string.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<pthread.h>
+	<unistd.h>
+	<string.h>
+	"DatabaseOpera.h"
+	"avltree.h"
+
+1458541769 /home/tang/DatabaseOpera/include/DatabaseOpera.h
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<string.h>
+	"mysql_connection.h"
+	<cppconn/config.h>
+	<cppconn/exception.h>
+	<cppconn/resultset.h>
+	<cppconn/statement.h>
+	<cppconn/driver.h>
+
+1458790608 source:/home/tang/DatabaseOpera/src/DatabaseOpera.cpp
+	"DatabaseOpera.h"
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<string.h>
+	"mysql_connection.h"
+	<cppconn/driver.h>
+	<cppconn/exception.h>
+	<cppconn/resultset.h>
+	<cppconn/statement.h>
+
+1458549086 source:/home/tang/DatabaseOpera/src/user_register.cpp
+	"user_register.h"
+
+1458549085 /home/tang/DatabaseOpera/include/user_register.h
+
+1459305160 /home/tang/DatabaseOpera/include/avltree.h
+
+1459328454 source:/home/tang/DatabaseOpera/src/avltree.cpp
+	"avltree.h"
+	<iostream>
+	<string.h>
+	<malloc.h>
+
